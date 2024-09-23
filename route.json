@@ -1,0 +1,100 @@
+{
+  "routes": [
+    {
+      "urlPath": "/content",
+      "entryName": "content",
+      "entryPath": "content.html",
+      "isSPA": true,
+      "isStream": false,
+      "isSSR": false,
+      "redirect": "",
+      "responseHeader": [],
+      "extra": {
+        "entryName": "content",
+        "loadableManifest": ""
+      },
+      "isSpa": true,
+      "specialHeader": []
+    },
+    {
+      "urlPath": "/options",
+      "entryName": "options",
+      "entryPath": "options.html",
+      "isSPA": true,
+      "isStream": false,
+      "isSSR": false,
+      "redirect": "",
+      "responseHeader": [],
+      "extra": {
+        "entryName": "options",
+        "loadableManifest": ""
+      },
+      "isSpa": true,
+      "specialHeader": []
+    },
+    {
+      "urlPath": "/popup",
+      "entryName": "popup",
+      "entryPath": "popup.html",
+      "isSPA": true,
+      "isStream": false,
+      "isSSR": false,
+      "redirect": "",
+      "responseHeader": [],
+      "extra": {
+        "entryName": "popup",
+        "loadableManifest": ""
+      },
+      "isSpa": true,
+      "specialHeader": []
+    },
+    {
+      "urlPath": "/side_panel",
+      "entryName": "side_panel",
+      "entryPath": "side_panel.html",
+      "isSPA": true,
+      "isStream": false,
+      "isSSR": false,
+      "redirect": "",
+      "responseHeader": [],
+      "extra": {
+        "entryName": "side_panel",
+        "loadableManifest": ""
+      },
+      "isSpa": true,
+      "specialHeader": []
+    },
+    {
+      "urlPath": "/i18n_resources",
+      "entryName": "i18n_resources",
+      "entryPath": "i18n_resources.html",
+      "isSPA": true,
+      "isStream": false,
+      "isSSR": false,
+      "redirect": "",
+      "responseHeader": [],
+      "extra": {
+        "entryName": "i18n_resources",
+        "loadableManifest": ""
+      },
+      "isSpa": true,
+      "specialHeader": []
+    },
+    {
+      "urlPath": "/subframe_scripts",
+      "entryName": "subframe_scripts",
+      "entryPath": "subframe_scripts.html",
+      "isSPA": true,
+      "isStream": false,
+      "isSSR": false,
+      "redirect": "",
+      "responseHeader": [],
+      "extra": {
+        "entryName": "subframe_scripts",
+        "loadableManifest": ""
+      },
+      "isSpa": true,
+      "specialHeader": []
+    }
+  ]
+}

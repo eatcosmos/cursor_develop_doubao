@@ -1,0 +1,59 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "assets/icon.png",
+         "16": "assets/icon.png",
+         "32": "assets/icon.png",
+         "48": "assets/icon.png"
+      },
+      "default_title": ""
+   },
+   "background": {
+      "service_worker": "background.mjs",
+      "type": "module"
+   },
+   "commands": {
+   },
+   "content_scripts": [ {
+      "js": [ "static/js/i18n_resources.js", "static/js/126.js", "static/js/627.js", "static/js/419.js", "static/js/279.js", "static/js/441.js", "static/js/736.js", "static/js/773.js", "static/js/866.js", "static/js/609.js", "static/js/content.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   } ],
+   "declarative_net_request": {
+      "rule_resources": [ {
+         "enabled": true,
+         "id": "1",
+         "path": "configs/declarative_ruleset_1.json"
+      } ]
+   },
+   "default_locale": "zh_CN",
+   "description": "__MSG_description__",
+   "differential_fingerprint": "1.1eeb9c8508ba89620e54deec91130db37d051871354f3f5d49d30353f0a9c5a5",
+   "externally_connectable": {
+      "matches": [ "https://*.doubao.com/*", "https://*.ciciai.com/*" ]
+   },
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "assets/icon.png",
+      "16": "assets/icon.png",
+      "32": "assets/icon.png",
+      "48": "assets/icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzasto5qjDQJOxFW3yEGK0f6gTPh3nTYPHptoPPXRbWNRzhxEXxciNXYYVEtcm5pEbkEEoIjkHxtyT1uABE+neZKYr6bYGQVnREHy9ABe0tWOZGslUErd+d1Tfw8m/P/+twd9jrGgD3IVgHbp3hatxM0BOUOEaQ0xdW5EVppYI9GtshkusqxfiIEZHnfXq7JoH2Uxa4+8jX2oihjUTikXthUjX2Kry+F7rRZUgfHhENH2hS+lU7cmYOnmuw0K1L0f6uWRbj5lrgKENgT7AB78d34xmR1gJaOEqHEbJ+vnlSR8cVlKw1ptiakVha7xTRqlFwJ2sJBMzrRjdVUP6TEXZQIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_name__",
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "options.html"
+   },
+   "permissions": [ "storage", "cookies", "tabs", "webRequest", "sidePanel", "scripting", "contextMenus", "declarativeNetRequest", "declarativeNetRequestWithHostAccess", "declarativeNetRequestFeedback", "webNavigation" ],
+   "side_panel": {
+      "default_path": "side_panel.html"
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.12.0",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "assets/icon*.png", "static/css/*", "static/svg/*", "static/image/*" ]
+   } ]
+}

@@ -1,0 +1,659 @@
+{
+  "autoLoadPlugins": false,
+  "tools": {
+    "bundlerChain": [
+      null,
+      null,
+      null
+    ],
+    "webpackChain": [
+      null,
+      null,
+      null
+    ],
+    "tsChecker": {
+      "issue": {
+        "exclude": [
+          {
+            "file": "**/api/lambda/**/*"
+          }
+        ]
+      }
+    },
+    "styledComponents": {
+      "topLevelImportPaths": [
+        "@modern-js/runtime/styled"
+      ]
+    },
+    "devServer": {
+      "client": {
+        "protocol": "ws",
+        "host": "localhost"
+      },
+      "liveReload": false,
+      "port": 9001,
+      "hot": false
+    }
+  },
+  "security": {
+    "checkPolyfill": false
+  },
+  "performance": {
+    "buildCache": {
+      "cacheDigest": [
+        null
+      ]
+    },
+    "removeConsole": true
+  },
+  "source": {
+    "alias": {
+      "@modern-js/runtime/plugins": "/opt/tiger/compile_path/src/code.byted.org/flow/flow-web-monorepo/packages/app-flow-ext-next/node_modules/.edenx/.runtime-exports/plugins.js",
+      "@_edenx_internal": "/opt/tiger/compile_path/src/code.byted.org/flow/flow-web-monorepo/packages/app-flow-ext-next/node_modules/.edenx",
+      "@_edenx_src": "/opt/tiger/compile_path/src/code.byted.org/flow/flow-web-monorepo/packages/app-flow-ext-next/src",
+      "@": "/opt/tiger/compile_path/src/code.byted.org/flow/flow-web-monorepo/packages/app-flow-ext-next/src",
+      "@shared": "/opt/tiger/compile_path/src/code.byted.org/flow/flow-web-monorepo/packages/app-flow-ext-next/shared",
+      "@modern-js/runtime-utils/node$": "/opt/tiger/compile_path/src/code.byted.org/flow/flow-web-monorepo/node_modules/.pnpm/@modern-js+runtime-utils@2.58.0_react-dom@18.2.0_react@18.2.0/node_modules/@modern-js/runtime-utils/dist/cjs/node/index.js",
+      "styled-components": "/opt/tiger/compile_path/src/code.byted.org/flow/flow-web-monorepo/node_modules/.pnpm/styled-components@5.3.11_@babel+core@7.24.7_react-dom@18.2.0_react-is@18.3.1_react@18.2.0/node_modules/styled-components/dist/styled-components.cjs.js",
+      "@edenx/runtime/plugins": "/opt/tiger/compile_path/src/code.byted.org/flow/flow-web-monorepo/packages/app-flow-ext-next/node_modules/.edenx/.runtime-exports/plugins.js",
+      "@meta/runtime/browser": "/opt/tiger/compile_path/src/code.byted.org/flow/flow-web-monorepo/node_modules/.pnpm/@edenx+runtime@1.58.0_@reduck+core@5.10.0_@types+react-dom@18.0.9_@types+react@18.0.26_react-_ps465ubn6gt67kcopiryz2msuq/node_modules/@edenx/runtime/dist/esm/core/browser/index.js",
+      "@meta/runtime/react": "/opt/tiger/compile_path/src/code.byted.org/flow/flow-web-monorepo/node_modules/.pnpm/@edenx+runtime@1.58.0_@reduck+core@5.10.0_@types+react-dom@18.0.9_@types+react@18.0.26_react-_ps465ubn6gt67kcopiryz2msuq/node_modules/@edenx/runtime/dist/esm/core/react/index.js",
+      "@meta/runtime/context": "/opt/tiger/compile_path/src/code.byted.org/flow/flow-web-monorepo/node_modules/.pnpm/@edenx+runtime@1.58.0_@reduck+core@5.10.0_@types+react-dom@18.0.9_@types+react@18.0.26_react-_ps465ubn6gt67kcopiryz2msuq/node_modules/@edenx/runtime/dist/esm/core/context/index.js",
+      "@meta/runtime": "/opt/tiger/compile_path/src/code.byted.org/flow/flow-web-monorepo/node_modules/.pnpm/@edenx+runtime@1.58.0_@reduck+core@5.10.0_@types+react-dom@18.0.9_@types+react@18.0.26_react-_ps465ubn6gt67kcopiryz2msuq/node_modules/@edenx/runtime/dist/esm/runtime/index.js",
+      "@edenx/runtime/slardar": "/opt/tiger/compile_path/src/code.byted.org/flow/flow-web-monorepo/packages/app-flow-ext-next/node_modules/.edenx/.runtime-exports/slardar.js",
+      "~": "./",
+      "@edenx/runtime/intl": "@edenx/plugin-starling-intl/runtime"
+    },
+    "transformImport": [
+      {
+        "libraryName": "@arco-design/web-react",
+        "libraryDirectory": "es",
+        "camelToDashComponentName": false,
+        "style": true
+      },
+      {
+        "libraryName": "@arco-design/web-react/icon",
+        "libraryDirectory": "react-icon",
+        "camelToDashComponentName": false
+      }
+    ],
+    "entries": {
+      "content": {
+        "entry": "./src/content/csui.tsx",
+        "disableMount": true
+      },
+      "options": {
+        "entry": "./src/pages/options/index.tsx",
+        "disableMount": true
+      },
+      "popup": {
+        "entry": "./src/pages/popup/index.tsx",
+        "disableMount": true
+      },
+      "side_panel": {
+        "entry": "./src/pages/side_panel/index.tsx",
+        "disableMount": true
+      },
+      "i18n_resources": {
+        "entry": "./src/common/i18n/resources.ts",
+        "disableMount": true
+      },
+      "subframe_scripts": {
+        "entry": "./src/pages/subframe_scripts/index.ts",
+        "disableMount": true
+      }
+    },
+    "mainEntryName": "main",
+    "enableAsyncEntry": false,
+    "enableCustomEntry": false,
+    "disableDefaultEntries": true,
+    "entriesDir": "./src/pages",
+    "configDir": "./config",
+    "globalVars": {
+      "process.env.IS_REACT18": "true",
+      "process.env.NODE_ENV": "production",
+      "process.env.CUSTOM_FLOW_DEV": "",
+      "process.env.CUSTOM_FLOW_WEB_ENV": "",
+      "process.env.CUSTOM_FLOW_EXT_ENV": "",
+      "process.env.CUSTOM_FLOW_EXT_VERSION": "1.12.0",
+      "process.env.BUILD_VERSION": "1.0.0.2690",
+      "process.env.BUILD_TYPE": "online",
+      "process.env.REGION": "cn",
+      "process.env.PLATFORM": "",
+      "process.env.DEVICE": "",
+      "process.env.EXTENSION_PKG_TYPE": "public",
+      "process.env.CICI_PUBLIC_ENV_TYPE": "production",
+      "process.env.CICI_PUBLIC_PRODUCT_NAME": "豆包",
+      "process.env.CICI_PUBLIC_API_DOMAIN": "www.doubao.com",
+      "process.env.CICI_PUBLIC_WEBSITE_HOST": "www.doubao.com",
+      "process.env.CICI_PUBLIC_APP_ID": "586864",
+      "process.env.CICI_PUBLIC_PACKAGE_TYPE": "release",
+      "process.env.CICI_PUBLIC_IS_OVERSEA": "false",
+      "process.env.PRODUCT_IDENTITY": "doubao",
+      "process.env.MEDIA_CDN_PREFIX": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/flow-ext-doubao/cdn-media-assets/",
+      "process.env.NODE_DEBUG": "false",
+      "IS_DEV_MODE": false,
+      "IS_DEV_LOCAL": false,
+      "IS_PROD_ENV": true,
+      "IS_BOE_ENV": false,
+      "IS_TEST_ENV": false,
+      "IS_LOCAL_ENV": false,
+      "IS_OVERSEA": false,
+      "FEATURE_GOOGLE_LOGIN": false,
+      "FEATURE_AWEME_LOGIN": true,
+      "FEATURE_ENABLE_LEGO_CARD": false,
+      "FEATURE_ENABLE_RUYI_CARD": false,
+      "FEATURE_ENABLE_CARD_BUILDER_CARD": true,
+      "FEATURE_ENABLE_PROMPT_DEBUG_ARGOS": true,
+      "IS_RELEASE_VERSION": false,
+      "FEATURE_ENABLE_SSO": true,
+      "FEATURE_MULTIPLE_BOT": false,
+      "FEATURE_SHOW_AGREEMENT_MODAL": true,
+      "FEATURE_MULTIPLE_LLM": true,
+      "FEATURE_AGE_GATE": false,
+      "FEATURE_BETA_APP_GUIDE": false,
+      "FEATURE_MOBILE_CHAT": false,
+      "FEATURE_ALLOW_DEBUG": false,
+      "FEATURE_SHOW_USER_UID": true,
+      "FEATURE_WATERMARK": false,
+      "FEATURE_REPORT_TEA": true,
+      "FEATURE_BOT_DISCOVER": false,
+      "FEATURE_CREATE_BOT": false,
+      "FEATURE_ENABLE_LOG": true,
+      "FEATURE_SHOW_COCOSUB_CONVERSATION_TAG": false,
+      "FEATURE_ENABLE_ANTI_DEBUG": false,
+      "FEATURE_ENABLE_DOUYIN": true,
+      "FEATURE_ENABLE_QISHUI": true,
+      "FEATURE_USER_PROFILE": true,
+      "FEATURE_PWA": false,
+      "FEATURE_HOMEPAGE_V1": false,
+      "FEATURE_LOCAL_BREAK": true,
+      "FEATURE_CICI_OGF": false,
+      "BOT_HEAT_SCORE": false,
+      "CUSTOM_FLOW_ENV": "",
+      "CUSTOM_BACKEND_ENV": "",
+      "CUSTOM_FLOW_BUILD_TYPE": "",
+      "BUILD_PUB_DATE": "2024-09-19 16:26:34",
+      "BUILD_VERSION": "1.0.0.2690",
+      "IS_EXTENSION_ENV": false,
+      "FEATURE_IS_NEED_LANDING_TO_NEW_CHAT": false,
+      "FEATURE_REGEN_BETTER_OR_WORSE": true,
+      "FEATURE_ENABLE_DEEP_SEARCH": true,
+      "FEATURE_TRANS_PREFER_LANG": true,
+      "FEATURE_ENABLE_IMAGE_EDIT": true,
+      "FEATURE_ENABLE_PDF_IMMERSIVE_READING": true,
+      "FEATURE_ENABLE_THREAD_SHARE_CONTINUE_CHAT": true
+    },
+    "include": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      "/opt/tiger/compile_path/src/code.byted.org/flow/flow-web-monorepo/packages/app-flow-ext-next/node_modules/.edenx"
+    ],
+    "define": {
+      "__DEV__": false
+    }
+  },
+  "dev": {
+    "client": {
+      "protocol": "ws",
+      "host": "127.0.0.1"
+    },
+    "port": 9001,
+    "assetPrefix": false,
+    "hmr": false
+  },
+  "output": {
+    "distPath": {
+      "root": "dist",
+      "html": ".",
+      "js": "static/js",
+      "css": "static/css",
+      "server": "bundles",
+      "worker": "worker"
+    },
+    "cleanDistPath": true,
+    "disableNodePolyfill": true,
+    "enableInlineRouteManifests": true,
+    "disableInlineRouteManifests": false,
+    "disableInlineRuntimeChunk": true,
+    "disableFilenameHash": true,
+    "filenameHash": false,
+    "disableSourceMap": true,
+    "polyfill": "off",
+    "disableCssModuleExtension": false,
+    "copy": [
+      {
+        "from": "./public/doubao/icon.png",
+        "to": "./assets/icon.png"
+      },
+      {
+        "from": "./_locales/doubao",
+        "to": "./_locales"
+      },
+      {
+        "from": "./src/manifest/configs",
+        "to": "./configs"
+      }
+    ],
+    "assetPrefix": "/"
+  },
+  "server": {
+    "baseUrl": "/",
+    "port": 8080
+  },
+  "html": {
+    "title": [
+      "",
+      null
+    ],
+    "mountId": "root",
+    "meta": {
+      "charset": {
+        "charset": "utf-8"
+      },
+      "viewport": "width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no",
+      "http-equiv": {
+        "http-equiv": "x-ua-compatible",
+        "content": "ie=edge"
+      },
+      "renderer": "webkit",
+      "layoutmode": "standard",
+      "imagemode": "force",
+      "wap-font-scale": "no",
+      "format-detection": "telephone=no"
+    },
+    "disableHtmlFolder": true,
+    "titleByEntries": {
+      "options": "豆包设置",
+      "side_panel": "Side Panel"
+    },
+    "tags": [
+      {
+        "tag": "script",
+        "attrs": {
+          "src": "/static/js/i18n_resources.js"
+        },
+        "head": true,
+        "append": false,
+        "publicPath": false,
+        "hash": false
+      }
+    ]
+  },
+  "plugins": [
+    {
+      "name": "@edenx/plugin-tailwind",
+      "usePlugins": [
+        {
+          "name": "@modern-js/plugin-tailwindcss",
+          "usePlugins": [
+            {
+              "name": "@modern-js/plugin-design-token"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "@edenx/app-tools",
+      "registerHook": {
+        "beforeExecDev": {},
+        "beforeExecBuild": {}
+      },
+      "usePlugins": [
+        {
+          "name": "@modern-js/app-tools",
+          "post": [
+            "@modern-js/plugin-initialize",
+            "@modern-js/plugin-analyze",
+            "@modern-js/plugin-ssr",
+            "@modern-js/plugin-document",
+            "@modern-js/plugin-state",
+            "@modern-js/plugin-router",
+            "@modern-js/plugin-router-v5",
+            "@modern-js/plugin-polyfill"
+          ],
+          "registerHook": {
+            "_internalRuntimePlugins": {},
+            "modifyFileSystemRoutes": {},
+            "modifyServerRoutes": {},
+            "modifyEntrypoints": {},
+            "checkEntryPoint": {},
+            "generateEntryCode": {},
+            "htmlPartials": {},
+            "beforeGenerateRoutes": {},
+            "addDefineTypes": {},
+            "collectServerPlugins": {},
+            "_internalServerPlugins": {},
+            "beforeDev": {},
+            "afterDev": {},
+            "beforeCreateCompiler": {},
+            "afterCreateCompiler": {},
+            "beforePrintInstructions": {},
+            "beforeBuild": {},
+            "afterBuild": {},
+            "beforeDeploy": {},
+            "deploy": {},
+            "afterDeploy": {},
+            "beforeRestart": {},
+            "registerDev": {},
+            "beforeDevTask": {},
+            "registerBuildPlatform": {},
+            "beforeBuildPlatform": {}
+          },
+          "usePlugins": [
+            {
+              "name": "@modern-js/plugin-initialize",
+              "post": [
+                "@modern-js/plugin-ssr",
+                "@modern-js/plugin-document",
+                "@modern-js/plugin-state",
+                "@modern-js/plugin-router",
+                "@modern-js/plugin-router-v5",
+                "@modern-js/plugin-polyfill"
+              ]
+            },
+            {
+              "name": "@modern-js/plugin-analyze",
+              "post": [
+                "@modern-js/runtime"
+              ]
+            },
+            {
+              "name": "@modern-js/server-build"
+            },
+            {
+              "name": "@modern-js/plugin-lint"
+            },
+            {
+              "name": "@modern-js/plugin-deploy"
+            }
+          ]
+        },
+        {
+          "name": "@edenx/plugin-deploy",
+          "post": [
+            "@modern-js/plugin-worker"
+          ]
+        },
+        {
+          "name": "@edenx/plugin-wrap-builder-plugins"
+        },
+        {
+          "name": "@modern-js/plugin-lint"
+        }
+      ]
+    },
+    {
+      "name": "webx:modernjs-plugin",
+      "post": [
+        "@modern-js/app-tools"
+      ]
+    },
+    {
+      "name": "flow-ext-plugin",
+      "pre": [
+        "@webx-kit/modernjs-plugin"
+      ]
+    },
+    {
+      "name": "@edenx/plugin-storybook",
+      "usePlugins": [
+        {
+          "name": "@modern-js/plugin-storybook"
+        }
+      ]
+    },
+    {
+      "name": "@edenx/plugin-slardar-web",
+      "required": [
+        "@edenx/runtime"
+      ],
+      "usePlugins": [
+        {
+          "name": "slardarSourcemapPlugin"
+        }
+      ]
+    }
+  ],
+  "builderPlugins": [
+    {
+      "name": "@modern-js/builder-plugin-ssr"
+    },
+    {
+      "name": "webx:modernjs-plugin/builder"
+    },
+    {
+      "name": "flow-ext-plugin/manifest-replace-plugin",
+      "pre": [
+        "@webx-kit/modernjs-plugin/manifest"
+      ]
+    }
+  ],
+  "runtime": {
+    "slardar": {
+      "bid": "flow_web_ext",
+      "env": "production",
+      "release": "1.0.0.2690",
+      "zone": "cn",
+      "disableAutoStart": false,
+      "disableAutoInit": false
+    }
+  },
+  "runtimeByEntries": {},
+  "bff": {
+    "proxy": {
+      "/": {
+        "target": "https://www.example.com/"
+      }
+    }
+  },
+  "_raw": {
+    "plugins": [
+      "[Circular 0]",
+      "[Circular 1]",
+      "[Circular 2]",
+      "[Circular 3]",
+      "[Circular 4]",
+      "[Circular 5]"
+    ],
+    "runtime": {
+      "slardar": {
+        "bid": "flow_web_ext",
+        "env": "production",
+        "release": "1.0.0.2690",
+        "zone": "cn",
+        "disableAutoStart": false,
+        "disableAutoInit": false
+      }
+    },
+    "builderPlugins": [
+      "[Circular 1]",
+      "[Circular 2]"
+    ],
+    "source": {
+      "entriesDir": "./src/pages",
+      "define": {
+        "__DEV__": false
+      },
+      "include": [
+        "[Circular 3]",
+        "[Circular 4]",
+        "[Circular 5]",
+        "[Circular 6]",
+        "[Circular 7]",
+        "[Circular 8]",
+        "[Circular 9]",
+        "[Circular 10]",
+        "[Circular 11]",
+        "[Circular 12]",
+        "[Circular 13]"
+      ],
+      "entries": {
+        "content": {
+          "entry": "./src/content/csui.tsx",
+          "disableMount": true
+        },
+        "options": {
+          "entry": "./src/pages/options/index.tsx",
+          "disableMount": true
+        },
+        "popup": {
+          "entry": "./src/pages/popup/index.tsx",
+          "disableMount": true
+        },
+        "side_panel": {
+          "entry": "./src/pages/side_panel/index.tsx",
+          "disableMount": true
+        },
+        "i18n_resources": {
+          "entry": "./src/common/i18n/resources.ts",
+          "disableMount": true
+        },
+        "subframe_scripts": {
+          "entry": "./src/pages/subframe_scripts/index.ts",
+          "disableMount": true
+        }
+      },
+      "disableDefaultEntries": true,
+      "alias": {
+        "~": "./",
+        "@edenx/runtime/intl": "@edenx/plugin-starling-intl/runtime"
+      },
+      "globalVars": {
+        "process.env.NODE_ENV": "production",
+        "process.env.CUSTOM_FLOW_DEV": "",
+        "process.env.CUSTOM_FLOW_WEB_ENV": "",
+        "process.env.CUSTOM_FLOW_EXT_ENV": "",
+        "process.env.CUSTOM_FLOW_EXT_VERSION": "1.12.0",
+        "process.env.BUILD_VERSION": "1.0.0.2690",
+        "process.env.BUILD_TYPE": "online",
+        "process.env.REGION": "cn",
+        "process.env.PLATFORM": "",
+        "process.env.DEVICE": "",
+        "process.env.EXTENSION_PKG_TYPE": "public",
+        "process.env.CICI_PUBLIC_ENV_TYPE": "production",
+        "process.env.CICI_PUBLIC_PRODUCT_NAME": "豆包",
+        "process.env.CICI_PUBLIC_API_DOMAIN": "www.doubao.com",
+        "process.env.CICI_PUBLIC_WEBSITE_HOST": "www.doubao.com",
+        "process.env.CICI_PUBLIC_APP_ID": "586864",
+        "process.env.CICI_PUBLIC_PACKAGE_TYPE": "release",
+        "process.env.CICI_PUBLIC_IS_OVERSEA": "false",
+        "process.env.PRODUCT_IDENTITY": "doubao",
+        "process.env.MEDIA_CDN_PREFIX": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/flow-ext-doubao/cdn-media-assets/",
+        "process.env.NODE_DEBUG": "false",
+        "IS_DEV_MODE": false,
+        "IS_DEV_LOCAL": false,
+        "IS_PROD_ENV": true,
+        "IS_BOE_ENV": false,
+        "IS_TEST_ENV": false,
+        "IS_LOCAL_ENV": false,
+        "IS_OVERSEA": false,
+        "FEATURE_GOOGLE_LOGIN": false,
+        "FEATURE_AWEME_LOGIN": true,
+        "FEATURE_ENABLE_LEGO_CARD": false,
+        "FEATURE_ENABLE_RUYI_CARD": false,
+        "FEATURE_ENABLE_CARD_BUILDER_CARD": true,
+        "FEATURE_ENABLE_PROMPT_DEBUG_ARGOS": true,
+        "IS_RELEASE_VERSION": false,
+        "FEATURE_ENABLE_SSO": true,
+        "FEATURE_MULTIPLE_BOT": false,
+        "FEATURE_SHOW_AGREEMENT_MODAL": true,
+        "FEATURE_MULTIPLE_LLM": true,
+        "FEATURE_AGE_GATE": false,
+        "FEATURE_BETA_APP_GUIDE": false,
+        "FEATURE_MOBILE_CHAT": false,
+        "FEATURE_ALLOW_DEBUG": false,
+        "FEATURE_SHOW_USER_UID": true,
+        "FEATURE_WATERMARK": false,
+        "FEATURE_REPORT_TEA": true,
+        "FEATURE_BOT_DISCOVER": false,
+        "FEATURE_CREATE_BOT": false,
+        "FEATURE_ENABLE_LOG": true,
+        "FEATURE_SHOW_COCOSUB_CONVERSATION_TAG": false,
+        "FEATURE_ENABLE_ANTI_DEBUG": false,
+        "FEATURE_ENABLE_DOUYIN": true,
+        "FEATURE_ENABLE_QISHUI": true,
+        "FEATURE_USER_PROFILE": true,
+        "FEATURE_PWA": false,
+        "FEATURE_HOMEPAGE_V1": false,
+        "FEATURE_LOCAL_BREAK": true,
+        "FEATURE_CICI_OGF": false,
+        "BOT_HEAT_SCORE": false,
+        "CUSTOM_FLOW_ENV": "",
+        "CUSTOM_BACKEND_ENV": "",
+        "CUSTOM_FLOW_BUILD_TYPE": "",
+        "BUILD_PUB_DATE": "2024-09-19 16:26:34",
+        "BUILD_VERSION": "1.0.0.2690",
+        "IS_EXTENSION_ENV": false,
+        "FEATURE_IS_NEED_LANDING_TO_NEW_CHAT": false,
+        "FEATURE_REGEN_BETTER_OR_WORSE": true,
+        "FEATURE_ENABLE_DEEP_SEARCH": true,
+        "FEATURE_TRANS_PREFER_LANG": true,
+        "FEATURE_ENABLE_IMAGE_EDIT": true,
+        "FEATURE_ENABLE_PDF_IMMERSIVE_READING": true,
+        "FEATURE_ENABLE_THREAD_SHARE_CONTINUE_CHAT": true
+      }
+    },
+    "html": {
+      "disableHtmlFolder": true,
+      "titleByEntries": {
+        "options": "豆包设置",
+        "side_panel": "Side Panel"
+      },
+      "tags": "[Circular tags]"
+    },
+    "output": {
+      "disableInlineRuntimeChunk": true,
+      "disableFilenameHash": true,
+      "filenameHash": false,
+      "disableSourceMap": true,
+      "distPath": {
+        "html": "."
+      },
+      "polyfill": "off",
+      "disableCssModuleExtension": false,
+      "copy": "[Circular copy]"
+    },
+    "tools": {
+      "devServer": {
+        "client": {
+          "protocol": "ws",
+          "host": "localhost"
+        },
+        "liveReload": false,
+        "port": 9001,
+        "hot": false
+      }
+    },
+    "performance": {
+      "removeConsole": true
+    },
+    "dev": {
+      "assetPrefix": false,
+      "port": 9001,
+      "hmr": false
+    },
+    "bff": {
+      "proxy": {
+        "/": {
+          "target": "https://www.example.com/"
+        }
+      }
+    }
+  },
+  "testing": {},
+  "deploy": {}
+}
